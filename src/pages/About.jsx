@@ -1,7 +1,7 @@
 import React from 'react';
 import logoImg from '../images/Logo_Nidaan-TPS.pdf.png';
-import aboutImg from '../images/nidan photos/ws3.jpg';
-import missionImg from '../images/nidan photos/ws2.jpg';
+import aboutImg from '../images/allinsterns/ws3.jpg';
+import missionImg from '../images/allinsterns/ws2.jpg';
 
 const About = () => {
   return (
@@ -46,7 +46,7 @@ const About = () => {
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Our mission at Nidaan is to provide accessible, compassionate, and evidence-based mental health services that empower individuals to overcome challenges, heal from past wounds, and create meaningful, fulfilling lives.</p>
+              <p className="text-gray-700 leading-relaxed mb-4">Our mission is to support people through their unique psychological journeys with care, professionalism, and respect. We strive to deliver informed, high-quality assessments,psychotherapies and interventions that foster growth, resilience, and meaningful change.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   'Safe, non-judgmental space where clients feel heard',
@@ -68,7 +68,7 @@ const About = () => {
         <section className="relative mb-4">
           <div className="bg-gradient-to-br from-white to-blue-50 border border-gray-200 rounded-2xl p-8 md:p-12 text-center shadow-sm">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">We envision a world where mental health is prioritized as an essential component of overall wellbeing, where seeking help is normalized and accessible to all, and where every individual has the resources and support they need to thrive psychologically and emotionally.</p>
+            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">To build a mentally healthy, inclusive community where quality psychological support is accessible to all.</p>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 'Innovative access to quality mental health services',

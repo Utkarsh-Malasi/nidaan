@@ -24,7 +24,7 @@ const ServiceIndividual = ({ setActivePage }) => {
           
           <div className="space-y-6 text-gray-600">
             <p>
-              At Nidaan, our approach to individual therapy is personalized to your unique needs and goals. 
+              At Nidaan- TPS, our approach to individual therapy is personalized to your unique needs and goals. 
               Whether you're dealing with a specific mental health condition, navigating a difficult life transition, 
               or simply seeking personal growth, our therapists are here to support you on your journey.
             </p>
@@ -70,7 +70,7 @@ const ServiceIndividual = ({ setActivePage }) => {
             
             <h3 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Our Commitment to You</h3>
             <p>
-              At Nidaan, we are committed to providing culturally sensitive, ethical, and effective care. 
+              At Nidaan -TPS, we are committed to providing culturally sensitive, ethical, and effective care. 
               We respect your unique background, values, and experiences, and we work to create a therapeutic 
               relationship based on trust, respect, and collaboration.
             </p>

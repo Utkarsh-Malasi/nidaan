@@ -67,13 +67,10 @@ const Contact = () => {
           <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Office Hours</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="flex items-center justify-between bg-gray-50 rounded-lg p-4">
-              <span className="text-gray-600">Monday - Friday</span>
-              <span className="text-gray-800 font-medium">9:00 AM - 7:00 PM</span>
+              <span className="text-gray-600">Monday - Saturday</span>
+              <span className="text-gray-800 font-medium">10:00 AM - 5:00 PM</span>
             </div>
-            <div className="flex items-center justify-between bg-gray-50 rounded-lg p-4">
-              <span className="text-gray-600">Saturday</span>
-              <span className="text-gray-800 font-medium">10:00 AM - 4:00 PM</span>
-            </div>
+           
             <div className="flex items-center justify-between bg-gray-50 rounded-lg p-4">
               <span className="text-gray-600">Sunday</span>
               <span className="text-gray-800 font-medium">Closed</span>
@@ -82,7 +79,7 @@ const Contact = () => {
           <div className="mt-6 pt-6 border-t border-gray-200">
             <div className="bg-red-50 p-4 rounded-lg">
               <p className="text-red-600 font-medium text-sm">
-                If this is an emergency, please call 911 or go to your nearest emergency room.
+                If this is an emergency, please call  14416  or go to your nearest emergency room.
               </p>
             </div>
           </div>

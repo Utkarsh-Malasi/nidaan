@@ -1,58 +1,78 @@
 import React from 'react';
 
 const Space = () => {
-  // Gallery images restricted to specific folders
   const internsImages = import.meta.glob('../images/allinsterns/*.{jpg,jpeg,png,svg}', { eager: true, import: 'default' });
   const nidanImages = import.meta.glob('../images/nidan photos/*.{jpg,jpeg,png,svg}', { eager: true, import: 'default' });
-  const imagesMap = { ...internsImages, ...nidanImages };
-  const galleryImages = Object.entries(imagesMap).map(([path, url]) => {
+  const spaceImages = Object.entries(nidanImages).map(([path, url]) => {
     const fileName = path.split('/').pop() || 'Image';
     const alt = fileName.replace(/[-_]/g, ' ').replace(/\.[^.]+$/, '');
-    return { src: url };
+    return { src: url, alt };
+  });
+  const collaborationImages = Object.entries(internsImages).map(([path, url]) => {
+    const fileName = path.split('/').pop() || 'Image';
+    const alt = fileName.replace(/[-_]/g, ' ').replace(/\.[^.]+$/, '');
+    return { src: url, alt };
   });
 
   return (
-    <div id="page-space" className="min-h-screen py-12">
-      <div className="container mx-auto px-4 md:px-12 lg:px-24">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 text-center">Our Space</h1>
+    <div id="page-space" className="min-h-screen py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-12 lg:px-24">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-slate-800">Gallery</h1>
+          <div className="mt-3 flex justify-center">
+            <span className="inline-block w-20 h-1 bg-blue-600 rounded"></span>
+          </div>
+        </div>
         
         <div className="bg-white p-8 rounded-2xl shadow-md mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 text-center">Our Space &amp; Activities</h2>
           <p className="text-gray-600 text-base md:text-lg text-center max-w-prose md:max-w-2xl mx-auto mb-8">
-            At Nidaan, we've created a warm, welcoming environment designed to help you feel safe and comfortable. 
-            Our office spaces are thoughtfully arranged to provide privacy, comfort, and a sense of calm. 
-            Take a virtual tour through our gallery below.
+            A glimpse into the dynamic learning and professional environment at Nidaan. This
+section showcases orientation and induction programs, quiz and debate activities,
+mock practice sessions, intern training, in-house expert workshops, peer
+presentations, professional development discussions, and moments of fun and
+engagement. It also highlights field visits to de-addiction centers, special and
+inclusive schools, and community settings, providing hands-on exposure and
+experiential learning.
           </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
+            {spaceImages.map((image, index) => (
               <div key={index} className="rounded-2xl overflow-hidden shadow-md transition-all hover:shadow-lg">
                 <img 
                   src={image.src} 
-                  alt={image.alt} 
-                  className="w-full h-auto md:h-64 object-cover"
+                  className="w-full h-auto md:h-64 object-fit"
                 />
-                <div className="p-4 bg-gray-50">
-                  <h3 className="font-medium text-gray-800 mb-1">{image.alt}</h3>
-                  <p className="text-sm text-gray-600">{image.caption}</p>
-                </div>
+             
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white p-8 rounded-2xl shadow-md mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 text-center">Collaborations &amp; Training Workshops with Other Organisations (Government &amp;
+Non-Government)</h2>
+          <p className="text-gray-600 text-base md:text-lg text-center max-w-prose md:max-w-2xl mx-auto mb-8">
+           This gallery captures Nidaan’s collaborative initiatives and training programs
+conducted with various government and non-government organizations. It includes
+workshops, sensitization programs, and capacity-building sessions for teachers,
+students, mental health professionals, defense personnel, parents, and other
+stakeholders, reflecting our commitment to community outreach and mental health
+awareness.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {collaborationImages.map((image, index) => (
+              <div key={index} className="rounded-2xl overflow-hidden shadow-md transition-all hover:shadow-lg">
+                <img 
+                  src={image.src} 
+                  className="w-full h-auto md:h-64 object-fit"
+                />
+               
               </div>
             ))}
           </div>
         </div>
         
-        <div className="bg-blue-50 p-8 rounded-2xl shadow-md">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Visit Us in Person</h2>
-          <p className="text-gray-600 mb-6">
-            We invite you to experience our space in person. Our office is designed to be accessible and comfortable for all clients. 
-            If you have any specific needs or concerns about our physical space, please don't hesitate to let us know when scheduling your visit.
-          </p>
-         
-          <p className="text-gray-600 text-center">
-            54 Canal Road, Jakhan, II floor
-
-Dehradun, Uttarakhand (India)
-          </p>
-        </div>
+      
       </div>
     </div>
   );

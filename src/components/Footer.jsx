@@ -5,8 +5,8 @@ const Footer = ({ setActivePage }) => {
   
   return (
     <footer className="bg-background-light text-text py-12 mt-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+      <div className="w-full max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -86,48 +86,7 @@ const Footer = ({ setActivePage }) => {
             </ul>
           </div>
           
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActivePage('service-individual');
-                  }}
-                  className="hover:text-primary transition-all duration-300"
-                >
-                  Individual Therapy
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActivePage('service-couples');
-                  }}
-                  className="hover:text-primary transition-all duration-300"
-                >
-                  Couples Counseling
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActivePage('service-family');
-                  }}
-                  className="hover:text-primary transition-all duration-300"
-                >
-                  Family Therapy
-                </a>
-              </li>
-            </ul>
-          </div>
+       
           
           {/* Contact Info */}
           <div>
@@ -165,10 +124,10 @@ const Footer = ({ setActivePage }) => {
         </div>
         
         <div className="border-t border-gray-200 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-text-light mb-6 md:mb-0">&copy; {currentYear} Nidaan Psychological Services. All rights reserved.</p>
+          <p className="text-sm text-text-light mb-6 md:mb-0">&copy; {currentYear} Nidaan The Psychological Services. All rights reserved.</p>
           
           <div className="text-sm text-red-600 font-medium bg-red-50 px-5 py-3 rounded-lg shadow-sm">
-            <p>For emergencies, please reach out to the nearest hospital or helpline.</p>
+            <p>For emergencies, please reach out to the nearest hospital or helpline  14416 </p>
           </div>
         </div>
 

@@ -24,7 +24,7 @@ const ServiceFamily = ({ setActivePage }) => {
           
           <div className="space-y-6 text-gray-600">
             <p>
-              At Nidaan, our family therapists work with families to nurture change and development. 
+              At Nidaan- TPS, our family therapists work with families to nurture change and development. 
               We view family problems as patterns or systems that need adjusting, rather than identifying any individual as the problem. 
               Our goal is to help your family work together to overcome challenges and create a healthier family dynamic.
             </p>
@@ -71,7 +71,7 @@ const ServiceFamily = ({ setActivePage }) => {
             
             <h3 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Our Commitment to You</h3>
             <p>
-              At Nidaan, we are committed to providing culturally sensitive, respectful care to families of all structures, backgrounds, and identities. 
+              At Nidaan -TPS, we are committed to providing culturally sensitive, respectful care to families of all structures, backgrounds, and identities. 
               We create a safe, non-judgmental environment where all family members can express themselves openly and work together toward positive change.
             </p>
             <p>

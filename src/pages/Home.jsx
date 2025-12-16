@@ -1,10 +1,10 @@
 import React from 'react';
-import founderImg from '../images/founders/founder.jpeg';
-import sirImg from '../images/founders/sir.jpg';
-import space1 from '../images/nidan photos/ws1.jpg';
-import space2 from '../images/nidan photos/ws2.jpg';
-import space3 from '../images/nidan photos/ws3.jpg';
-import space4 from '../images/nidan photos/ws4.jpg';
+import founderImg from '../images/founders/rashi.jpeg';
+import sirImg from '../images/founders/naveen-artguru.png';
+import space1 from '../images/nidan photos/photo_31_2025-11-16_02-07-11.jpg';
+import space2 from '../images/allinsterns/ws2.jpg';
+import space3 from '../images/allinsterns/ws3.jpg';
+import space4 from '../images/allinsterns/ws4.jpg';
 
 const Home = ({ setActivePage }) => {
   const [showHowToBook, setShowHowToBook] = React.useState(false);
@@ -22,10 +22,9 @@ const Home = ({ setActivePage }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
             {/* Left: Text Content */}
             <div className="w-full lg:max-w-none">
-              <h1 className="text-left text-4xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6 break-words">Healing Begins With Understanding.</h1>
+              <h1 className="text-left text-4xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6 break-words">WE ARE HERE TO HELP</h1>
               <p className="text-left text-lg md:text-xl leading-relaxed text-gray-600 mb-8 md:mb-10 break-words">
-                At Nidaan, we provide a safe, compassionate space for you to explore your thoughts and feelings. 
-                Our experienced therapists are here to support you on your journey to mental wellness.
+                At Nidaan – The Psychological Services, we are committed to delivering ethical, evidence-based and high-quality mental health care to individuals and families across all age groups. With a team of highly qualified, licensed and intensively trained professionals, we provide comprehensive assessment, counselling, psychotherapy, special education support and training services—both online and in person—ensuring accessible, trustworthy and compassionate care for everyone who seeks help.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <button 
@@ -110,11 +109,14 @@ const Home = ({ setActivePage }) => {
         <div className="bg-white p-8 md:p-12 rounded-xl shadow-md">
           <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6 text-center">Our Approach</h2>
           <div className="max-w-4xl mx-auto">
+            <h1 className="text-center text-2xl lg:text-4xl font-bold text-slate-900 leading-tight mb-6 break-words">WE BELIEVE IN EQUALITY</h1>
             <p className="text-base md:text-lg text-text mb-4 max-w-prose mx-auto break-words">
-              At Nidaan, we believe in a holistic, client-centered approach to mental health. We understand that each person's journey is unique, and we tailor our therapeutic methods to meet your specific needs and goals.
+              Nidaan-TPS has committed professionals dedicated to delivering reliable, high-quality psychological services for individuals, couples, and families. Since its establishment in 2019, the practice has expanded from a small setup into a comprehensive service center catering to the varied psychological needs of the community.
             </p>
             <p className="text-base md:text-lg text-text mb-6 max-w-prose mx-auto break-words">
-              Our therapists integrate evidence-based practices with compassionate care, creating a supportive environment where healing and growth can flourish. We emphasize collaboration, empowerment, and building on your inherent strengths to help you navigate life's challenges.
+              Understanding that every individual’s experiences and challenges are different, we design our interventions to align with each person’s unique requirements.
+Our team comprises skilled and experienced psychologists, psychotherapists, counsellors, and special educators from diverse areas of expertise, ensuring that each client is paired with the professional best equipped to support their specific needs.
+
             </p>
             <div className="text-center">
               <button 
@@ -221,13 +223,14 @@ const Home = ({ setActivePage }) => {
               <img 
                 src={founderImg} 
                 alt="Dr. Rashi Bhatnagar" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit-cover"
               />
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-1">Dr. Sarah Johnson</h3>
-              <p className="text-primary mb-2">Clinical Psychologist</p>
-              <p className="text-gray-600 text-sm mb-3">Specializing in anxiety, depression, and trauma recovery</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-1">Dr. Rashi Bhatnagar</h3>
+              <p className="text-primary mb-2">Founder & Head</p>
+              <p className="text-gray-600 text-sm mb-3">
+Clinical Psychologist [A]; Rehabilitation Psychologist; Special Educator; Psychotherapist; Trainer</p>
               <button 
                 onClick={() => setActivePage('team')} 
                 className="text-primary hover:text-primary-dark font-medium transition-all text-sm flex items-center"
@@ -246,13 +249,14 @@ const Home = ({ setActivePage }) => {
               <img 
                 src={sirImg} 
                 alt="Dr. M" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit-cover"
               />
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-1">Mr. Naveen Nischal</h3>
-              <p className="text-primary mb-2"> De-addiction Professional</p>
-              <p className="text-gray-600 text-sm mb-3">Expert in de-addiction and counseling</p>
+              <p className="text-primary mb-2">Consultant Psychologist</p>
+              <p className="text-gray-600 text-sm mb-3">Consultant Psychologist (De-addiction Professional)
+Trainer.</p>
               <button 
                 onClick={() => setActivePage('team')} 
                 className="text-primary hover:text-primary-dark font-medium transition-all text-sm flex items-center"
@@ -324,15 +328,15 @@ const Home = ({ setActivePage }) => {
         <div className="bg-white p-8 md:p-10 rounded-xl shadow-md max-w-3xl mx-auto">
           <div className="flex items-center mb-6">
             <div className="bg-background-light w-12 h-12 rounded-full flex items-center justify-center mr-4">
-              <span className="text-primary text-xl font-bold">S</span>
+              <span className="text-primary text-xl font-bold">Y</span>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-text-dark">Sarah M.</h3>
-              <p className="text-text-light">Client for 8 months</p>
+              <h3 className="text-lg font-semibold text-text-dark">Yari Rubu</h3>
+            
             </div>
           </div>
           <blockquote className="text-text text-lg italic mb-6 leading-relaxed">
-            "Working with the therapists at Nidaan has been transformative. I've gained valuable insights and tools that have helped me manage my anxiety and improve my relationships. The warm, non-judgmental environment made me feel safe to open up from day one."
+           " This is one of the best learning experience I have ever had so far. Ever since I was a kid education and learning would mean dread for me. But this is the first time, I have felt completely safe, comfortable and understood at the same time. Thank you Nidaan and all those who are working there. Your efforts will never go in vain. "
           </blockquote>
           <button 
             onClick={() => setActivePage('testimonials')} 

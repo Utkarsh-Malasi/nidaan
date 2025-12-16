@@ -8,7 +8,7 @@ const Header = ({ activePage, setActivePage }) => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
     { id: 'services', label: 'Services' },
-    { id: 'space', label: 'Our Space' },
+    { id: 'space', label: 'Gallery' },
     { id: 'team', label: 'Our Team' },
     { id: 'testimonials', label: 'Testimonials' },
     { id: 'internship', label: 'Internship' },
@@ -34,8 +34,8 @@ const Header = ({ activePage, setActivePage }) => {
           >
             <img src={logoImg} alt="Nidaan Logo" className="h-16 w-auto sm:h-20" />
             <span className="flex flex-col leading-tight">
-              <span className="text-xl sm:text-2xl font-bold text-blue-900">Nidaan</span>
-              <span className="hidden sm:inline text-xs text-gray-600 uppercase tracking-widest whitespace-nowrap">Psychological Services</span>
+              <span className="text-xl sm:text-2xl font-bold text-blue-900 " style={{ fontFamily: '"Bookman Old Style", Bookman, "Times New Roman", serif' }}>Nidaan</span>
+              <span className="hidden sm:inline text-xs text-gray-600 uppercase tracking-widest whitespace-nowrap" style={{ fontFamily: '"Bookman Old Style", Bookman, "Times New Roman", serif' }}>The Psychological Services</span>
             </span>
           </a>
         </div>

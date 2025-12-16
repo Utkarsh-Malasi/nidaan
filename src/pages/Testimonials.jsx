@@ -4,53 +4,42 @@ const Testimonials = () => {
   // Testimonial data
   const testimonials = [
     {
-      name: "Sarah M.",
+      name: "Yari Rubu",
       duration: "Client for 8 months",
-      text: "Working with the therapists at Nidaan has been transformative. I've gained valuable insights and tools that have helped me manage my anxiety and improve my relationships. The warm, non-judgmental environment made me feel safe to open up from day one.",
-      initial: "S"
+      text: "This is one of the best learning experience I have ever had so far. Ever since I was a kid education and learning would mean dread for me. But this is the first time, I have felt completely safe, comfortable and understood at the same time. Thank you Nidaan and all those who are working there. Your efforts will never go in vain. <3",
+      initial: "Y"
     },
     {
-      name: "Rahul K.",
+      name: "Naveen Kumar",
       duration: "Client for 1 year",
-      text: "After struggling with depression for years, I finally found the support I needed at Nidaan. My therapist's compassionate approach and expertise in cognitive behavioral therapy helped me develop practical strategies to challenge negative thought patterns and rediscover joy in my life.",
-      initial: "R"
+      text: "Dr. Rashi is a true professional who helped me navigate my challenges with patience and deep understanding. Her guidance has made a significant positive impact on my life, and I’m truly grateful for her support. Thank you for your dedication and genuine care!",
+      initial: "N"
     },
     {
-      name: "Maya and Arjun",
+      name: "Dinesh Panjwani",
       duration: "Couples therapy clients for 6 months",
-      text: "Our marriage was at a breaking point when we came to Nidaan. Through couples counseling, we learned to communicate effectively and understand each other's needs. Our therapist created a balanced space where both of us felt heard. We now have the tools to work through conflicts constructively.",
-      initial: "M"
-    },
-    {
-      name: "Deepak S.",
-      duration: "Client for 3 months",
-      text: "As someone who was skeptical about therapy, I was surprised by how comfortable I felt at Nidaan. My therapist respected my pace and never pushed me to discuss things I wasn't ready for. The practical coping strategies I've learned have made a significant difference in managing my work stress.",
+      text: "Our family highly recommends Dr Rashi and the comprehensive assessment services she offers at Nidann.Dr. Rashi is very professional and knowledgeable. She and her staff really took time to understand the concerns we had with one of our children’s learning struggles. She then tailored the testing to what our child needed and conducted a thorough assessment. Afterwards Dr Rashi spent time explaining the results and giving many practical suggestions and a plan forward. Her manner is very gentle and caring. She put us completely at ease. We highly recommend this much needed service in Dehradun.",
       initial: "D"
     },
     {
-      name: "The Sharma Family",
+      name: "Aviral Singh",
+      duration: "Client for 3 months",
+      text: "Me and my fiance are really happy to find her and seriously the way she listens to our problems which we were facing and hears out everything so quietly and patiently . The psychologist is a professional  in what she do for her clients to make them believe themselves in a positive way . I was having problems in controlling my anger and after taking few sessions with her i feel a-lot better with my anger management and i am trying to make things happen for myself and my partner .",
+      initial: "A"
+    },
+    {
+      name: "Manya Pundir",
       duration: "Family therapy clients for 4 months",
-      text: "Family therapy at Nidaan helped us navigate a difficult transition period after relocating to a new city. Our therapist was skilled at engaging our teenagers and creating a space where everyone felt comfortable sharing their feelings. We've developed stronger bonds and better communication skills.",
+      text: "Great place for budding psychologist to do internship in and otherwise. The amount of effort Mrs. Rashi Bhatnagar puts in with her every student is enriching and inspiring. The clients are handled with sincerity and care. All the ethical principles are followed dealing with the client. I would highly recommend to have a visit atleast once.",
+      initial: "M"
+    },
+    {
+      name: "Shreya Singh",
+      duration: "Client for 10 months",
+      text: "There is a great environment at Nidaan for acquiring hands-on knowledge about Psychology and Special Education. I would like to especially acknowledge Dr. Rashi Bhatnagar, who has served as a mentor and guide during my learning experience there.",
       initial: "S"
     },
-    {
-      name: "Priya T.",
-      duration: "Client for 10 months",
-      text: "After experiencing trauma, I struggled to find a therapist I could trust. At Nidaan, I found not only expertise in trauma treatment but also genuine compassion. My therapist's patient, gentle approach has helped me process my experiences and begin to heal in ways I didn't think were possible.",
-      initial: "P"
-    },
-    {
-      name: "Vikram J.",
-      duration: "Group therapy participant for 6 months",
-      text: "Participating in group therapy at Nidaan has been an eye-opening experience. Connecting with others facing similar challenges helped me feel less alone. The facilitator created a supportive environment where we could share openly and learn from each other's experiences and coping strategies.",
-      initial: "V"
-    },
-    {
-      name: "Leela N.",
-      duration: "Client for 9 months",
-      text: "As an older adult dealing with life transitions, I appreciated finding a therapist at Nidaan who understood the unique challenges of my age group. The therapy has helped me navigate retirement, health concerns, and changing family dynamics with greater resilience and peace of mind.",
-      initial: "L"
-    }
+ 
   ];
 
   return (
@@ -60,7 +49,7 @@ const Testimonials = () => {
         
         <div className="bg-white p-8 rounded-2xl shadow-md mb-12">
           <p className="text-gray-600 text-base md:text-lg text-center max-w-prose md:max-w-2xl mx-auto mb-8">
-            At Nidaan, we're honored to be part of our clients' healing journeys. 
+            At Nidaan- TPS, we're honored to be part of our clients' healing journeys. 
             Here are some of their stories and experiences in their own words. 
             We share these testimonials with permission and have changed names to protect privacy.
           </p>
@@ -74,7 +63,13 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">{testimonial.name}</h3>
-                    <p className="text-gray-500">{testimonial.duration}</p>
+                    <div className="mt-1 flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927a1 1 0 011.902 0l1.07 3.295a1 1 0 00.95.69h3.462a1 1 0 01.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.294a1 1 0 01-1.538 1.118L10 14.347l-2.887 2.94a1 1 0 01-1.538-1.118l1.07-3.294a1 1 0 00-.364-1.118L3.48 8.722a1 1 0 01.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.295z" />
+                        </svg>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 <blockquote className="text-gray-600 italic">

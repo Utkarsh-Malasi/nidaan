@@ -24,7 +24,7 @@ const ServiceCouples = ({ setActivePage }) => {
           
           <div className="space-y-6 text-gray-600">
             <p>
-              At Nidaan, our couples counselors are trained to help you navigate the complexities of your relationship. 
+              At Nidaan- TPS, our couples counselors are trained to help you navigate the complexities of your relationship. 
               Whether you're dealing with communication issues, recovering from infidelity, preparing for marriage, 
               or simply wanting to deepen your connection, our therapists provide a safe, neutral space to explore these challenges.
             </p>
@@ -72,7 +72,7 @@ const ServiceCouples = ({ setActivePage }) => {
             
             <h3 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Our Commitment to You</h3>
             <p>
-              At Nidaan, we are committed to providing a non-judgmental, balanced approach to couples therapy. 
+              At Nidaan- TPS, we are committed to providing a non-judgmental, balanced approach to couples therapy. 
               Our therapists maintain neutrality and do not take sides, ensuring that both partners feel heard and respected. 
               We recognize and honor diverse relationship structures and cultural backgrounds, tailoring our approach to meet your unique needs.
             </p>
