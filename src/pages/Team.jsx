@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImg from '../images/founders/rashi.jpeg';
+import founderImg from '../images/founders/rashi1.jpeg';
 import sirImg from '../images/founders/naveen-artguru.png';
 import staff3 from '../images/founders/sneha.jpeg';
 import staff4 from '../images/founders/sarin.jpeg';
@@ -37,13 +37,13 @@ const Tabs = ({ setActivePage }) => {
       headline: 'Consultant Vocational Trainer (PwD)| NIOS & Placement facilitator (PwD)',
       qualification:'Ms. Sarita Bhasin is an RCI-registered Vocational Trainer, experienced Disability expert and interventionist, Counsellor. She is trained in disability conditions (ASD, ADHD, ID, SLD), counselling, and vocational skill development, with extensive experience in psycho-educating and supporting learners with diverse developmental and educational needs.',
       experience: 'With over 15 years of experience, Ms. Bhasin has worked across renowned inclusive schools and community-based programs, providing remedial teaching, counselling, and vocational training to children and young adults with special needs. She contributes to open schooling support through NIOS, assists families with disability certification and UDID processes, and conducts parent–teacher awareness programs. Her work includes planning and implementing individualized learning strategies, behaviour and emotional support, and facilitating functional academics and life skills.',
-      specialties: "Ms. Bhasin specializes in [	Remedial teaching and individualized education planning (IEPs)|Vocational training and skill development|	Counselling for emotional, behavioural, and interpersonal challenges|	Psychoeducation for parents, caregivers, teachers, and students|	Assessment of learning needs and progress monitoring|	Placement facilitation, career readiness, and life-skill development]. She has successfully supported university admissions, job placements, and vocational independence for students with special needs",
+      specialties: "Ms. Bhasin specializes in [Remedial teaching and individualized education planning (IEPs)|Vocational training and skill development|	Counselling for emotional, behavioural, and interpersonal challenges|	Psychoeducation for parents, caregivers, teachers, and students|	Assessment of learning needs and progress monitoring|	Placement facilitation, career readiness, and life-skill development]. She has successfully supported university admissions, job placements, and vocational independence for students with special needs",
       approach: 'Her approach is practical, inclusive, and skill-oriented. Ms. Bhasin integrates specialized instructional methods, behaviour management strategies, and hands-on vocational training to help learners gain confidence, independence, and real-world competence. She emphasizes collaboration with families and educators to ensure holistic progress and meaningful participation in academic, social, and vocational environments.',
     },
     {
       name: 'Ms. Anjali Bhatt',
       headline: 'Consultant Special Educator| Disability Certification Facilitator| Trainer',
-      qualification:'Ms. Anjali Bhatt holds an M.Sc. in Mathematics, an M.Sc. in Psychology, and RCI licensed Special Educator (PGDP and B.Ed. in Special Education). She is also a certified Master Trainer in Autism and has extensive training in special education, disability support, and inclusive teaching practices.',
+      qualification:'Ms. Anjali Bhatt holds an M.Sc. in Mathematics, an M.Sc. in Psychology and she is an RCI licensed Special Educator (PGDP and B.Ed. in Special Education). She is also a certified Master Trainer in Autism and has extensive training in special education, disability support, and inclusive teaching practices.',
       experience: 'With over 20 years of professional experience, Ms. Bhatt has worked across government and non-government sectors, including serving as a Resource Teacher with RMSA (Uttarakhand). She has contributed significantly to special education services, disability certification processes, psychoeducation, supervision, and program implementation. Her experience includes mentoring professionals, coordinating events, and conducting workshops and training programs for educators, parents, and practitioners.',
       specialties: "Ms. Bhatt specializes in special education for children with developmental and learning needs, autism intervention, disability assessment support, and curriculum adaptation. She is skilled in training teams, facilitating capacity-building workshops, and supporting inclusive education across diverse settings. Her work spans direct intervention, documentation, supervision, and advisory roles with multiple Govt. and Non-Govt. organizations.",
       approach: 'Her approach is structured, inclusive, and learner-centered. She integrates evidence-based special education strategies with practical classroom and home-based support. Ms. Bhatt focuses on empowering children, families, and educators through individualized planning, consistent skill-building, and collaborative problem-solving, ensuring sustainable progress and meaningful outcomes.'
@@ -81,7 +81,7 @@ const Tabs = ({ setActivePage }) => {
                   <p>{p.experience}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Specialties</h4>
+                  <h4 className="font-semibold text-gray-800">Specialization</h4>
                   <p>{p.specialties}</p>
                 </div>
                 <div>

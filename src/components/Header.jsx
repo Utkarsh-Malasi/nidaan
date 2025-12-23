@@ -23,19 +23,21 @@ const Header = ({ activePage, setActivePage }) => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md py-4">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-12 lg:px-24 flex justify-between items-center">
-        <div className="flex items-center gap-4 flex-shrink-0 mr-8">
+        <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0 mr-2 sm:mr-8">
           <a 
             href="#" 
             onClick={(e) => {
               e.preventDefault();
               handleNavigation('home');
             }}
-            className="flex items-center gap-4"
+            className="flex items-center gap-2 sm:gap-4"
           >
-            <img src={logoImg} alt="Nidaan Logo" className="h-16 w-auto sm:h-20" />
+            <img src={logoImg} alt="Nidaan Logo" className="h-12 w-auto sm:h-20" />
             <span className="flex flex-col leading-tight">
               <span className="text-xl sm:text-2xl font-bold text-blue-900 " style={{ fontFamily: '"Bookman Old Style", Bookman, "Times New Roman", serif' }}>Nidaan</span>
-              <span className="hidden sm:inline text-xs text-gray-600 uppercase tracking-widest whitespace-nowrap" style={{ fontFamily: '"Bookman Old Style", Bookman, "Times New Roman", serif' }}>The Psychological Services</span>
+              <span className="text-[9px] sm:text-xs text-gray-600 uppercase tracking-tight sm:tracking-widest whitespace-nowrap block" style={{ fontFamily: '"Bookman Old Style", Bookman, "Times New Roman", serif' }}>The Psychological Services</span>
+
+
             </span>
           </a>
         </div>

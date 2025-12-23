@@ -4,8 +4,8 @@ const Services = ({ setActivePage }) => {
   const services = [
     {
       id: 'consult_assess',
-      title: 'Clinical Consultation',
-      description: '(For emotional, behavioural, developmental, cognitive,substance dependance , disorders anddisability)',
+      title: 'Consultation',
+      description: '(For emotional, behavioural, developmental, cognitive, substance dependence, disorders and disabilities)',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -17,10 +17,10 @@ const Services = ({ setActivePage }) => {
         'Mode: In-person or online (as per need and availability)'
       ],
     },
-       {
+    {
       id: 'assess',
       title: 'Assessment',
-      description: '(For emotional, behavioural, developmental, cognitive, and disability-related concerns)',
+      description: '(For emotional, behavioural, developmental, cognitive, substance dependence, disorders and disabilities)',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -30,6 +30,40 @@ const Services = ({ setActivePage }) => {
         'Consultation charge: ₹500 (charged only on the first visit/contact)',
         'Session duration: 30 minutes',
         'Mode: In-person or online (as per need and availability)'
+      ],
+      subServices: [
+        {
+          id: 'disability_cert',
+          title: 'Disability / Disorder Assessment',
+          description: '(For Learning Disability, Autism, Intellectual Disability, ADHD, etc.)',
+          icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          ),
+          details: [
+            'Conducted as per RCI norms and national guidelines',
+            'Includes complete clinical assessment, report preparation with guidelines, and parental psychoeducation',
+            'Usually single sitting; may require more than one depending on assessment type',
+            'Charges communicated after initial consultation'
+          ],
+        },
+        {
+          id: 'psy_ass',
+          title: 'Psychological Assessment',
+          description: '(For Anxiety, Depression, OCD, Personality, Intelligence, Apptitude, Interest, etc)',
+          icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          ),
+          details: [
+            'Consultation 15–30 minutes to clarify relevance',
+            'Complete clinical assessment, report preparation with guidelines, and parental/patient psychoeducation',
+            'Single sitting typical; may need additional sitting',
+            'Charges communicated after initial consultation'
+          ],
+        }
       ],
     },
     {
@@ -46,35 +80,7 @@ const Services = ({ setActivePage }) => {
         'Onsite and Online options available (India & International)'
       ],
     },
-    {
-      id: 'disability_cert',
-      title: 'Disability/ Disorder Assessment',
-      description: '(For Learning Disability, Autism, Intellectual Disability, ADHD, etc.)',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-        </svg>
-      ),
-      details: [
-        'Conducted as per RCI norms and national guidelines',
-        'Includes complete clinical assessment, report preparation, and psychoeducation',
-        'Charges communicated after initial consultation'
-      ],
-    },
-    {
-      id: 'psy_ass',
-      title: 'Psychological Assessment',
-      description: 'Anxiety, Depression, OCD, Personality, Intelligence, Apptitude, Interest etc',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-        </svg>
-      ),
-      details: [
-        'Includes complete clinical assessment, report preparation, and psychoeducation',
-        'Charges communicated after initial consultation'
-      ],
-    },
+    
     {
       id: 'trainings_workshops',
       title: 'Professional Trainings, Workshops & Webinars',
@@ -117,7 +123,7 @@ const Services = ({ setActivePage }) => {
     {
       id: 'intervention_sessions',
       title: 'Intervention Sessions',
-      description: '(For Children and adolescence with Neurodivergent condition{ ADHD & ASD}  & Learning Disabilities)',
+      description: '(For Children and adolescents with Neurodivergent condition {ADHD & ASD} & Learning Disabilities)',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -131,6 +137,7 @@ const Services = ({ setActivePage }) => {
   ];
 
   const [activeDetail, setActiveDetail] = React.useState(null);
+  const [activeSubDetail, setActiveSubDetail] = React.useState(null);
 
   return (
     <div id="page-services" className="min-h-screen py-12">
@@ -164,6 +171,90 @@ const Services = ({ setActivePage }) => {
               </button>
               {activeDetail === service.id && (
                 <div className="mt-4 bg-gray-50 rounded-lg p-4 space-y-4">
+                  {service.id === 'assess' && (
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-800">Overview</h4>
+                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                          {service.details?.map((d, i) => (
+                            <li key={i}>{d}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="grid grid-cols-1 gap-4">
+                        {service.subServices?.map((sub) => (
+                          <div key={sub.id} className="bg-white p-4 rounded-xl shadow-md transition-all hover:shadow-lg">
+                            <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
+                              {sub.icon}
+                            </div>
+                            <h4 className="text-lg font-semibold text-gray-800">{sub.title}</h4>
+                            <p className="text-gray-600 mb-3">{sub.description}</p>
+                            <button
+                              onClick={() => setActiveSubDetail(activeSubDetail === sub.id ? null : sub.id)}
+                              className="text-primary hover:text-primary-dark font-medium transition-all flex items-center"
+                            >
+                              {activeSubDetail === sub.id ? 'Hide details' : 'Learn more'}
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                              </svg>
+                            </button>
+                            {activeSubDetail === sub.id && (
+                              <div className="mt-3 space-y-3">
+                                <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                  {sub.details?.map((d, i) => (
+                                    <li key={i}>{d}</li>
+                                  ))}
+                                </ul>
+                                {sub.id === 'disability_cert' && (
+                                  <div className="space-y-3">
+                                    <div>
+                                      <h4 className="text-lg font-semibold text-gray-800">Booking Steps</h4>
+                                      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                        <li>Message/email/voice note your concern and purpose of assessment in short.</li>
+                                        <li>You will receive available slots and payment details.</li>
+                                      
+                                      </ul>
+                                    </div>
+                                    <div>
+                                      <h4 className="text-lg font-semibold text-gray-800">Payment Process</h4>
+                                      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                        <li>Once the slot is confirmed, you will receive a QR code for payment.</li>
+                                        <li>Payment of consultation ₹500/- (nonrefundable) to be made before the session via QR code or UPI for confirmation.</li>
+                                        <li>Assessment charges to be submitted at the time of assessment.</li>
+                                        <li>Confirm your slot within 12 hours to hold the booking & share the payment screenshot as confirmation.</li>
+                                        <li>Rescheduling is allowed once, with 24-hour prior notice. No refund will be provided for missed or last-minute cancellations.</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                )}
+                                {sub.id === 'psy_ass' && (
+                                  <div className="space-y-3">
+                                    <div>
+                                      <h4 className="text-lg font-semibold text-gray-800">Booking Steps</h4>
+                                      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                        <li>Message/email/voice note your concern and purpose of assessment in short.</li>
+                                        <li>You will receive available slots and payment details.</li>
+                                      </ul>
+                                    </div>
+                                    <div>
+                                      <h4 className="text-lg font-semibold text-gray-800">Payment Process</h4>
+                                      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                        <li>Once the slot is confirmed, you will receive a QR code for payment.</li>
+                                        <li>Payment of consultation ₹500/- (nonrefundable) to be made before the session via QR code or UPI for confirmation.</li>
+                                        <li>Assessment charges to be submitted at the time of assessment.</li>
+                                        <li>Confirm your slot within 12 hours to hold the booking & share the payment screenshot as confirmation.</li>
+                                        <li>Rescheduling is allowed once, with 24-hour prior notice. No refund will be provided for missed or last-minute cancellations.</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {service.id === 'consult_assess' && (
                     <div className="space-y-3">
                       <div>
@@ -187,9 +278,9 @@ const Services = ({ setActivePage }) => {
                     <div className="space-y-3">
                       <div>
                         <h4 className="text-lg font-semibold text-gray-800">Session Details</h4>
-                        <p className="text-gray-700">Session Duration: 60 minutes</p>
-                        <p className="text-gray-700">Consultation charge of ₹500 applies on first visit/contact</p>
-                         <p className="text-gray-700">Session charges to be communicated individually</p>
+                        <li className="text-gray-700">Session Duration: 60 minutes</li>
+                        <li className="text-gray-700">Consultation charge of ₹500 applies only on first visit/contact</li>
+                         <li className="text-gray-700">Session charges to be communicated individually according to the type of psychotherapy/counselling and nationality</li>
                       </div>
                       <div className="overflow-x-auto">
                        
@@ -206,75 +297,12 @@ const Services = ({ setActivePage }) => {
                       </div>
                     </div>
                   )}
-                  {service.id === 'disability_cert' && (
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Overview</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Conducted as per RCI norms and national guidelines.</li>
-                          <li>Consultation of 15-30 minutes to provide clarity and relevance of assessment details.</li>
-                          <li>Includes complete clinical assessment, report preparation with detailed guidelines, and parental psychoeducation session.</li>
-                          <li>Usually conducted in single sitting but may require more than one sitting depending on the type of assessment.</li>
-                          <li>Charges communicated individually after initial consultation.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Booking Steps</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Message/email/voice note your concern and purpose of assessment in short.</li>
-                          <li>You will receive available slots and payment details.</li>
-                          <li>Confirm your slot within 12 hours to hold the booking.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Payment Process</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Once the slot is confirmed, you will receive a QR code for payment.</li>
-                          <li>Payment of consultation ₹500/- (nonrefundable) to be made before the session via QR code or UPI for confirmation.</li>
-                          <li>Assessment charges to be submitted at the time of assessment.</li>
-                          <li>Share the payment screenshot as confirmation.</li>
-                          <li>Rescheduling is allowed once, with 24-hour prior notice. No refund will be provided for missed or last-minute cancellations.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  )}
-                   {service.id === 'psy_ass' && (
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Overview</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Consultation of 15-30 minutes to provide clarity and relevance of assessment details.</li>
-                          <li>Includes complete clinical assessment, report preparation with detailed guidelines, and parental psychoeducation session.</li>
-                          <li>Usually conducted in single sitting but may require more than one sitting depending on the type of assessment.</li>
-                          <li>Charges communicated individually after initial consultation.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Booking Steps</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Message/email/voice note your concern and purpose of assessment in short.</li>
-                          <li>You will receive available slots and payment details.</li>
-                          <li>Confirm your slot within 12 hours to hold the booking.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Payment Process</h4>
-                        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                          <li>Once the slot is confirmed, you will receive a QR code for payment.</li>
-                          <li>Payment of consultation ₹500/- (nonrefundable) to be made before the session via QR code or UPI for confirmation.</li>
-                          <li>Assessment charges to be submitted at the time of assessment.</li>
-                          <li>Share the payment screenshot as confirmation.</li>
-                          <li>Rescheduling is allowed once, with 24-hour prior notice. No refund will be provided for missed or last-minute cancellations.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  )}
+                  
                   {service.id === 'trainings_workshops' && (
                     <div className="space-y-2">
                       <h4 className="text-lg font-semibold text-gray-800">Overview</h4>
                       <p className="text-gray-700">We conduct structured trainings and workshops for professionals, students, teachers across mental health, education, healthcare, and allied fields. These programs focus on skill enhancement, evidence-based practices, hands-on learning, and capacity building to support effective and ethical professional practice.</p>
-                      <li className="text-gray-700">The topic, date, and time will be communicated as per the schedule at the relevant time.</li>
-                      <li className="text-gray-700">Training charges will be applicable as per the program and will be communicated individually prior to registration.</li>
+                      <li className="text-gray-700">The topic, date, charges and time will be communicated as per the schedule at the relevant time.</li>
                       
                     </div>
                   )}
@@ -285,10 +313,16 @@ const Services = ({ setActivePage }) => {
                         <ul className="list-disc pl-6 space-y-1 text-gray-700">
                           <li>Fee: ₹3,000/- per month</li>
                           <li>Duration: Minimum one month (extendable)</li>
-                          <li>Includes: Guided practical exposure (Testing, Counselling, Professional interactions, Workshops, Psychoeducation, Field Exposure etc.)</li>
+                          <li>Includes:
+                            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                              <li> Guided practical exposure (Testing, Counselling, Professional interactions, Workshops, Psychoeducation etc.)</li>
+                              <li>Field Work Exposure</li>
                           <li>Career guidelines to individual intern in psychology and special education</li>
                            <li>Professional development through peer discussion</li>
                           <li>Case discussions & Mock practices</li>
+                          <li>Mock practices</li>
+                            </ul>
+                          </li>
                           <li>Certification on successful completion</li>
                            <li>LOR available on request</li>
                           <li>Registration confirmed only after advance payment via QR code</li>
@@ -319,11 +353,10 @@ const Services = ({ setActivePage }) => {
                         <h4 className="text-lg font-semibold text-gray-800">Interventions</h4>
                         <ul className="list-disc pl-6 space-y-1 text-gray-700">
                            <li>Applied Behaviour Analysis (ABA)</li>
-                            <li>Behaviour Management(hyperactivity and Impulsivity)</li>
+                            <li>Behaviour Management (Hyperactivity and Impulsivity)</li>
                           <li>Attention building</li>
                           <li>Special Education</li>
                         </ul>
-                        <p className="text-gray-700 mt-2">For Neurodivergent children & adolescents.</p>
                       </div>
                     </div>
                   )}
@@ -334,20 +367,15 @@ const Services = ({ setActivePage }) => {
         </div>
 
         <div id="service-charges" className="bg-white p-8 rounded-2xl shadow-md mt-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">Service Charges</h2>
-          <p className="text-gray-700 text-center mb-4">Registration/Consultation: ₹500 (One-time, non-refundable).</p>
-          <div className="overflow-x-auto">
         
-          </div>
-          <p className="text-gray-700 text-center mt-4">Internship Fee: ₹3,000/month.</p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-teal-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Booking Rules</h3>
-              <p className="text-gray-700">Advance payment mandatory via UPI/QR. Screenshot required.</p>
+              <p className="text-gray-700">Advance payment mandatory via UPI/QR. Screenshot required</p>
             </div>
             <div className="bg-red-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Cancellation Policy</h3>
-              <p className="text-gray-700">Rescheduling allowed once with 24-hour notice. No refunds for last-minute cancellations.</p>
+              <p className="text-gray-700">Rescheduling allowed once with 24-hour notice. No refunds for last-minute cancellations</p>
             </div>
           </div>
         </div>

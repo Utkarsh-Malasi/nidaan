@@ -1,6 +1,6 @@
-import React from 'react';
 
-const Testimonials = () => {
+
+const Testimonials = ({ setActivePage }) => {
   // Testimonial data
   const testimonials = [
     {
@@ -40,19 +40,46 @@ const Testimonials = () => {
       initial: "S"
     },
  
+  {
+    name: "Prashansha Upadhyay",
+    duration: "Review posted 2 years ago",
+    text: "I have heard about Dr.rashi (rashi di) multiple times ... about how good she is with her work ......but after meeting her for the first time for the session...I felt like this will help me a lot ...I felt like the power to overcome my difficulties....her humour and her enthusiastic approach is so good and specially her welcoming smile 😊....you will automatically feel good once you say hello to her ..... she's the best in her field...and she gives you the feeling of there's actually someone who has your back ..and she actually understands the needs , listens and discusses too ....it just never feels like one way conversation or sharing...it's always a two way and fully satisfying session everytime...... everytime my session gets over ...I go back with a smile on my face ....I definitely recommend everyone to rashi di whoever is feeling like to take a session....💗",
+    initial: "P"
+  },
+  {
+    name: "Shrestha Singh",
+    duration: "Review posted 4 years ago",
+    text: "This is the best place in terms of gaining knowledge from the core and learning through experiences under the support of an excellent mentor..!! Also much much more than satisfactory in terms of psychological services and guidance towards mental health..!!",
+    initial: "S"
+  },
+  {
+    name: "Jyoti Arora",
+    duration: "Review posted 5 months ago",
+    text: "Rashi Ma'am is an excellent psychologist....she understanding, cooperative n solves the issues very smoothly n in a satisfactory way...A gem of a person 😀",
+    initial: "J"
+  },
+  {
+    name: "S & L vdWel",
+    duration: "Review posted 4 years ago",
+    text: "Had an excellent experience here. Needed a clinical assessment for my daughter's education development needs. Dr Rashi Bhatnagar is very thorough. She has a wonderful manner with children. They feel comfortable very quickly. She has great experience and explains things very clearly. Very thankful to have such a wonderful psychologist in Dehradun.",
+    initial: "S"
+  },
+  {
+    name: "Stuti Giri",
+    duration: "Review posted a year ago",
+    text: "A great foundation for psychology... helps us to get detailed knowledge about the ways and methods of how we deal with people with psychological issues. Must go and explore the clinical field.👍",
+    initial: "S"
+  }
+
   ];
 
   return (
     <div id="page-testimonials" className="min-h-screen py-12">
       <div className="container mx-auto px-4 md:px-12 lg:px-24">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 text-center">Client Testimonials</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-700 mb-6 text-center">Reflections from Our People</h1>
         
         <div className="bg-white p-8 rounded-2xl shadow-md mb-12">
-          <p className="text-gray-600 text-base md:text-lg text-center max-w-prose md:max-w-2xl mx-auto mb-8">
-            At Nidaan- TPS, we're honored to be part of our clients' healing journeys. 
-            Here are some of their stories and experiences in their own words. 
-            We share these testimonials with permission and have changed names to protect privacy.
-          </p>
+         
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -86,9 +113,9 @@ const Testimonials = () => {
             Every journey is unique, and we're committed to providing personalized care that addresses your specific needs. 
             If you're ready to begin your own journey toward healing and growth, we're here to support you every step of the way.
           </p>
-          <button 
-            onClick={() => window.location.href = '#contact'} 
-            className="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-full transition-all shadow-md hover:shadow-lg"
+          <button
+            onClick={() => setActivePage('contact')}
+            className="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-full transition-all shadow-md hover:shadow-lg inline-block"
           >
             Schedule Your Consultation
           </button>

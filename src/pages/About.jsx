@@ -1,16 +1,16 @@
 import React from 'react';
 import logoImg from '../images/Logo_Nidaan-TPS.pdf.png';
-import aboutImg from '../images/allinsterns/ws3.jpg';
-import missionImg from '../images/allinsterns/ws2.jpg';
+import aboutImg from '../images/nidan photos/photo_79_2025-11-16_02-07-11.jpg';
+import missionImg from '../images/nidan photos/mission.jpeg';
 
 const About = () => {
   return (
     <div id="page-about" className="min-h-screen py-20">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-12 lg:px-24">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-slate-800">About Nidaan</h1>
+          <h1 className="text-4xl font-bold text-slate-800">About Nidaan - The Psychological Services</h1>
           <div className="mt-3 flex justify-center">
-            <span className="inline-block w-20 h-1 bg-blue-600 rounded"></span>
+           
           </div>
         </div>
 
@@ -22,12 +22,14 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Story & Approach</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Approach</h2>
               <div className="text-gray-700 leading-relaxed">
-                <p className="mb-4">Nidaan is a team of dedicated mental health professionals committed to providing high-quality psychological services to individuals, couples, and families. Founded in 2010, our practice has grown from a small clinic to a comprehensive mental health center serving the diverse needs of our community.</p>
-                <div className="border-l-4 border-blue-500 pl-4 italic text-gray-600 mb-4">“Nidaan means diagnosis or solution.”</div>
-                <p className="mb-4">We believe in a holistic approach to mental health, addressing the mind, body, and spirit connection. We recognize that each person's journey is unique, and we tailor our therapeutic approaches to meet individual needs, cultural backgrounds, and personal goals.</p>
-                <p className="mb-4">Our team consists of licensed psychologists, therapists, and counselors with diverse specializations and backgrounds, allowing us to match clients with the professional best suited to their needs.</p>
+                <h4 className="text-xl font-bold text-secondary mb-4">WE BELIEVE IN QUALITY</h4>
+                <p className="mb-4">
+Nidaan-TPS has committed professionals dedicated to delivering reliable, high-quality psychological services for individuals, couples, and families. Since its establishment in 2019, the practice has expanded from a small setup into a comprehensive service center catering to the varied psychological needs of the community.
+Understanding that every individual’s experiences and challenges are different, we design our interventions to align with each person’s unique requirements.
+Our team comprises skilled and experienced psychologists, psychotherapists, counsellors, and special educators from diverse areas of expertise, ensuring that each client is paired with the professional best equipped to support their specific needs.
+</p>
               </div>
             </div>
             <div>
@@ -46,7 +48,7 @@ const About = () => {
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Our mission is to support people through their unique psychological journeys with care, professionalism, and respect. We strive to deliver informed, high-quality assessments,psychotherapies and interventions that foster growth, resilience, and meaningful change.</p>
+              <p className="text-gray-700 leading-relaxed mb-4">Our mission is to support people through their unique psychological journeys with care, professionalism, and respect. We strive to deliver informed, high-quality assessments, psychotherapies and interventions that foster growth, resilience, and meaningful change.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   'Safe, non-judgmental space where clients feel heard',

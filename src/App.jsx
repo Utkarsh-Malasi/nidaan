@@ -49,7 +49,7 @@ function App() {
       case 'team':
         return <Team setActivePage={handlePageChange} />
       case 'testimonials':
-        return <Testimonials />
+        return <Testimonials setActivePage={handlePageChange} />
       case 'internship':
         return <Internship setActivePage={handlePageChange} />
       case 'contact':

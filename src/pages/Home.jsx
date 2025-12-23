@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImg from '../images/founders/rashi.jpeg';
+import founderImg from '../images/founders/rashi1.jpeg';
 import sirImg from '../images/founders/naveen-artguru.png';
 import space1 from '../images/nidan photos/photo_31_2025-11-16_02-07-11.jpg';
 import space2 from '../images/allinsterns/ws2.jpg';
@@ -109,7 +109,7 @@ const Home = ({ setActivePage }) => {
         <div className="bg-white p-8 md:p-12 rounded-xl shadow-md">
           <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6 text-center">Our Approach</h2>
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-center text-2xl lg:text-4xl font-bold text-slate-900 leading-tight mb-6 break-words">WE BELIEVE IN EQUALITY</h1>
+            <h1 className="text-center text-2xl lg:text-4xl font-bold text-slate-900 leading-tight mb-6 break-words">WE BELIEVE IN QUALITY</h1>
             <p className="text-base md:text-lg text-text mb-4 max-w-prose mx-auto break-words">
               Nidaan-TPS has committed professionals dedicated to delivering reliable, high-quality psychological services for individuals, couples, and families. Since its establishment in 2019, the practice has expanded from a small setup into a comprehensive service center catering to the varied psychological needs of the community.
             </p>
@@ -144,19 +144,11 @@ Our team comprises skilled and experienced psychologists, psychotherapists, coun
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-text-dark mb-2">Individual Therapy</h3>
+            <h3 className="text-xl font-semibold text-text-dark mb-2">Consultation</h3>
             <p className="text-text mb-4">
-              One-on-one sessions focused on your unique needs, helping you navigate life's challenges and develop coping strategies.
+             For emotional, behavioural, developmental, cognitive, substance dependence, disorders and disabilities
             </p>
-            <button 
-              onClick={() => setActivePage('service-individual')} 
-              className="text-primary hover:text-primary-dark font-medium transition-all duration-300 flex items-center"
-            >
-              Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </button>
+            
           </div>
 
           {/* Service Card 2 */}
@@ -166,19 +158,11 @@ Our team comprises skilled and experienced psychologists, psychotherapists, coun
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-text-dark mb-2">Couples Counseling</h3>
+            <h3 className="text-xl font-semibold text-text-dark mb-2">Psychotherapy / Counselling</h3>
             <p className="text-text mb-4">
-              Strengthen your relationship through improved communication, conflict resolution, and deeper emotional connection.
+              For children, adolescents, adults, couples, and families
             </p>
-            <button 
-              onClick={() => setActivePage('service-couples')} 
-              className="text-primary hover:text-primary-dark font-medium transition-all duration-300 flex items-center"
-            >
-              Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </button>
+           
           </div>
 
           {/* Service Card 3 */}
@@ -188,19 +172,11 @@ Our team comprises skilled and experienced psychologists, psychotherapists, coun
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-text-dark mb-2">Family Therapy</h3>
+            <h3 className="text-xl font-semibold text-text-dark mb-2">Intervention Sessions</h3>
             <p className="text-text mb-4">
-              Heal family relationships, improve communication patterns, and create a healthier home environment for everyone.
+              For Children and adolescents with Neurodivergent condition (ADHD & ASD) & Learning Disabilities
             </p>
-            <button 
-              onClick={() => setActivePage('service-family')} 
-              className="text-primary hover:text-primary-dark font-medium transition-all duration-300 flex items-center"
-            >
-              Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </button>
+           
           </div>
         </div>
         <div className="text-center mt-8">
@@ -215,7 +191,7 @@ Our team comprises skilled and experienced psychologists, psychotherapists, coun
 
       {/* Meet Our Team Teaser */}
       <section className="container mx-auto px-4 md:px-12 lg:px-24 mb-16">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center">Meet Our Team</h2>
+        <h2 className="text-3xl font-semibold text-secondary mb-8 text-center">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Team Member 1 */}
           <div className="bg-white p-6 rounded-xl shadow-md transition-all hover:shadow-lg flex items-center">
@@ -281,7 +257,7 @@ Trainer.</p>
 
       {/* Gallery Preview */}
       <section className="container mx-auto px-4 md:px-12 lg:px-24 mb-16 md:mb-24">
-        <h2 className="text-3xl font-semibold text-secondary mb-8 text-center">A Look Inside Our Space</h2>
+        <h2 className="text-3xl font-semibold text-secondary mb-8 text-center">A Glimpse Into Our Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           <div className="rounded-xl overflow-hidden shadow-md transition-all hover:shadow-xl">
             <img 
@@ -324,7 +300,7 @@ Trainer.</p>
 
       {/* Testimonial Snippet */}
       <section className="container mx-auto px-4 mb-16 md:mb-24">
-        <h2 className="text-3xl font-semibold text-secondary mb-8 md:mb-10 text-center">What Our Clients Say</h2>
+        <h2 className="text-3xl font-semibold text-secondary mb-8 md:mb-10 text-center">Reflections from Our People</h2>
         <div className="bg-white p-8 md:p-10 rounded-xl shadow-md max-w-3xl mx-auto">
           <div className="flex items-center mb-6">
             <div className="bg-background-light w-12 h-12 rounded-full flex items-center justify-center mr-4">

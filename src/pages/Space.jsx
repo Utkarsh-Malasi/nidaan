@@ -40,7 +40,7 @@ experiential learning.
               <div key={index} className="rounded-2xl overflow-hidden shadow-md transition-all hover:shadow-lg">
                 <img 
                   src={image.src} 
-                  className="w-full h-auto md:h-64 object-fit"
+                  className="w-full h-auto md:h-64 object-contain"
                 />
              
               </div>
@@ -64,7 +64,7 @@ awareness.
               <div key={index} className="rounded-2xl overflow-hidden shadow-md transition-all hover:shadow-lg">
                 <img 
                   src={image.src} 
-                  className="w-full h-auto md:h-64 object-fit"
+                  className="w-full h-auto md:h-64 object-contain"
                 />
                
               </div>

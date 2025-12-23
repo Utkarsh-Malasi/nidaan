@@ -127,7 +127,7 @@ const Footer = ({ setActivePage }) => {
           <p className="text-sm text-text-light mb-6 md:mb-0">&copy; {currentYear} Nidaan The Psychological Services. All rights reserved.</p>
           
           <div className="text-sm text-red-600 font-medium bg-red-50 px-5 py-3 rounded-lg shadow-sm">
-            <p>For emergencies, please reach out to the nearest hospital or helpline  14416 </p>
+            <p>In case of an emergency, please contact your nearest hospital or call the National Mental Health Helpline (Tele-MANAS) at <b>14416 </b></p>
           </div>
         </div>
 
