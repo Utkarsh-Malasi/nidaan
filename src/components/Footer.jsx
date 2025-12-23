@@ -92,7 +92,7 @@ const Footer = ({ setActivePage }) => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic">
-              <p className="mb-2">Nidaan-The Psychological Services</p>
+              <p className="mb-2">Nidaan - The Psychological Services</p>
               <p className="mb-2">54 Canal Road, Jakhan, II floor</p>
               <p className="mb-2">Dehradun, Uttarakhand (India)</p>
               <p className="mb-2">

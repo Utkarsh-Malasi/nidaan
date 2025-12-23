@@ -319,7 +319,7 @@ const Services = ({ setActivePage }) => {
                               <li>Field Work Exposure</li>
                           <li>Career guidelines to individual intern in psychology and special education</li>
                            <li>Professional development through peer discussion</li>
-                          <li>Case discussions & Mock practices</li>
+                          <li>Case discussions</li>
                           <li>Mock practices</li>
                             </ul>
                           </li>
